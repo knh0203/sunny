@@ -1,0 +1,467 @@
+@charset 'utf-8';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li , ol, ul {
+    list-style: none;
+}
+body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --black: #000;
+    --dark-gray: #555;
+    --deep-gray: #999;
+    --gray: #DEDEDE;
+    --light-gray: #F8F8F8;
+    --white: #fff;
+}
+
+.wrap {
+    border: 1px solid var(--light-gray);
+    width: 375px;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.header img {
+    width: 20%;
+    height: 35%;
+    margin-top: 10px;
+}
+
+.section {
+    width: 100%;
+}
+
+/* 메인화면 */
+.main_visual {
+    width: 100%;
+}
+.sun {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sun img {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.sun h3 {
+    text-align: center;
+    font-size: 12px;
+}
+.sun h1 {
+    text-align: center;
+    padding: 4px 0 50px 0;
+}
+
+
+/* 메인 검색창 */
+.search {
+    width: 90%;
+    height: 40px;
+    background: var(--black);
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.search input {
+    width: 94%;
+    background: none;
+    border: none;
+    color: var(--deep-gray);
+    font-size: 12px;
+    line-height: 1.5;
+}
+.search input:focus {
+    content: '';
+}
+.search button {
+    width: 6%;
+    height: 90%;
+    border: none;
+    background: none;
+}
+.search button div {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid var(--deep-gray);
+    position: relative;
+}
+.search button div::before {
+    position: absolute;
+    content: '';
+    width: 1px ;
+    height: 7px;
+    background: var(--deep-gray);
+    transform: rotate(-45deg);
+    top: 90%;
+    left: 100%;
+}
+
+
+
+
+.download {
+    width: 100%;
+    padding: 20px;
+    background: var(--light-gray);
+    color: var(--deep-gray);
+    margin-bottom: 50px;
+}
+.download div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.download div:nth-child(2) {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.download div:nth-child(2) .googlePlay {
+    width: 45%;
+    height: 40px;
+    background: var(--black);
+    border-radius: 5px;
+}
+.download div:nth-child(2) .appStore {
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+    background: var(--black);
+}
+
+
+
+
+
+
+
+/* 앱시스템 설명1 */
+
+.system01 {
+    width: 100%;
+    min-height: 2600px;
+    background: url('../연습/img/Group\ 138.png') center center / cover no-repeat;
+    background-size: 365px 2400px;
+    margin-bottom: 200px;
+}
+.system01_wrap {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.app01 {
+    width: 100%;
+    height: 720px;
+    background: url('../연습/img/pngwing.com\ \(2\).png') center center / cover no-repeat;
+    transform: translateY(-2px);
+    z-index: 1;
+}
+.content01 {
+    width: 100%;
+    height: 160px;
+    padding: 20px 50px;
+    color: var(--white);
+    background: var(--black);
+    text-align: center;
+    transform: translateY(-5px);
+}
+.white01 {
+    width: 100%;
+    height: 100px;
+    background: var(--white);
+    text-align: center;
+    line-height: 120px;
+}
+.white01 i {
+    padding-right: 4px;
+}
+.white01 h3 {
+    padding-right: 4px;
+}
+.content01 > * {
+    padding: 5px 0;
+}
+.content01 p {
+    font-size: 12px;
+}
+.white02 {
+    width: 100%;
+    height: 500px;
+    background: var(--white);
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+
+
+/* 앱시스템설명2 */
+.first_system2 {
+    width: 100%;
+    height: 160vh;
+    position: relative;
+}
+.color {
+    width: 45%;
+    height: 160vh;
+    background: red;
+    margin-left: 182px;
+}
+/* .white {
+    width: 100%;
+    height: 32.5vh;
+    background-color: #fff;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+} */
+.bbb {
+    width: 100%;
+    position: sticky;
+    top: 40%;
+    background-color: royalblue;
+}
+.system02_wrap {
+    width: 100%;
+    display: flex;
+}
+.system02 {
+    width: 180px;
+    height: 160px;
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.system02 .content02 {
+    width: 100%;
+    padding: 10px;
+}
+.system02 .content02 > * {
+    padding: 5px 0;
+}
+.system02 .content02 p {
+    font-size: 12px;
+}
+.content02 i {
+    padding-right: 4px;
+}
+.app2 {
+    width: 49%;
+    height: 320px;
+    border: 5px solid var(--black);
+    border-radius: 20px;
+    transform: translate(3% ,-30%);
+}
+
+
+
+/* 피드백 */
+.feedback {
+    width: 100%;
+}
+.feedback_title {
+    width: 100%;
+    text-align: center;
+}
+.feedback_title i {
+    font-size: 100px;
+    color: var(--gray);
+}
+.feedback_title h1 {
+    margin-bottom: 10px;
+}
+.feedback_title p {
+    color: var(--dark-gray);
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+
+.feedback01 {
+    width: 100%;
+    margin-bottom: 80px;
+}
+/* 코멘트 */
+.comments h1 {
+    font-size: 50px;
+    text-align: center;
+    color: rgba(0,0,0,0.04);
+    line-height: 0.5;
+}
+.comments_wrap {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+.comments_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.coach {
+    display: flex;
+}
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gray);
+}
+.coachName {
+    font-size: 12px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.chumboo {
+    height: 22px;
+    border: 1px solid var(--gray);
+    padding: 4px 10px;
+    font-size: 12px;
+    color: var(--gray);
+    border-radius: 3px;
+    transform: translateY(9px);
+    background: var(--white);
+}
+.ment {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.day {
+    display: flex;
+    font-size: 12px;
+    color: var(--gray);
+}
+.date {
+    padding-right: 5px;
+}
+
+
+
+.feedback02 {
+    width: 100%;
+}
+.qna {
+    width: 100%;
+}
+.qna h1 {
+    font-size: 50px;
+    text-align: center;
+    color: rgba(0,0,0,0.04);
+    line-height: 0.5;
+}
+.qna_wrap {
+    width: 80%;
+    height: 280px;
+    background: var(--white);
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0 ;
+    padding: 20px;
+}
+.current_q {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 5px;
+}
+.current_q p {
+    text-align: center;
+    font-size: 12px;
+    padding: 30px 0 20px 0;
+}
+.current_q button {
+    width: 60%;
+    background: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+}
+.current_d {
+    display: flex;
+    justify-content: space-between;
+}
+.current_d ul{
+    display: flex;
+
+}
+.current_d ul li {
+    font-size: 10px;
+    padding: 0 4px;
+    color: var(--deep-gray);
+}
+.current_d div {
+    font-size: 10px;
+    color: var(--deep-gray);
+}
+.question {
+    padding: 10px 0;
+    position: relative;
+}
+.question div {
+    padding: 3px 0;
+}
+.question div ul {
+    display: flex;
+}
+.question div ul li {
+    font-size: 10px;
+    color: var(--deep-gray);
+    padding-right: 4px;
+}
+.question i {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+}
+
+
+
+.coach_answer {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    background: var(--light-gray);
+}
+
+
+.footer {
+
+}
